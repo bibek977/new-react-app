@@ -1,4 +1,12 @@
-var React = require('react');
-var ReactDom = require('react-dom');
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDom.render(<h1>hello world</h1> ,document.getElementById('root'))
+const timeNow = new Date().toLocaleTimeString()
+
+ReactDOM.render(
+    <>
+    <h1 contentEditable="true">Time : {timeNow} </h1>
+    </>,
+ 
+    document.getElementById('root')
+)

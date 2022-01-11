@@ -1,13 +1,13 @@
 import React from 'react'
 import Greetings from './components/Greetings'
-import Heading from './components/Heading'
+import Calculator from './components/Calculator'
 
 function App() {
     return (
         <div>
 
             <Greetings></Greetings>
-            <Heading></Heading>
+            <Calculator></Calculator>
 
         </div>
     )

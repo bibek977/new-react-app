@@ -1,5 +1,5 @@
 import React from 'react'
-// import fullNameOnly, {myName, fName} from './components/Name'
+import fullNameOnly, {myName, fName} from './Name'
 // import * as Names from './Name'
 
 
@@ -11,6 +11,9 @@ const Heading = ()=>{
         <h1>{Names.myName}</h1>
         <h1>{Names.fName()}</h1> */}
         
+        <h1>{fullNameOnly}</h1>
+        <h1>{myName}</h1>
+        <h1>{fName()}</h1>
         
         </>
     )

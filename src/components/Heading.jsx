@@ -1,11 +1,18 @@
 import React from 'react'
-// import ReactDOM from 'react-dom'
+// import fullNameOnly, {myName, fName} from './components/Name'
+// import * as Names from './Name'
+
 
 const Heading = ()=>{
     return (
+        <>
 
-        <h1>This is Heading</h1>
-
+        {/* <h1>{Names.default}</h1>
+        <h1>{Names.myName}</h1>
+        <h1>{Names.fName()}</h1> */}
+        
+        
+        </>
     )
 }
 

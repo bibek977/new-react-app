@@ -8,7 +8,7 @@ function App() {
 
             <Greetings></Greetings>
             <Heading></Heading>
-            
+
         </div>
     )
 }

@@ -10,9 +10,12 @@ const Card = (props)=>{
                 <div className="card-img">
                     <img src={props.src} alt="" />
                 </div>
+                <div className="text">
+
                 <div className="card-title">{props.title}</div>
                 <div className="card-info">{props.info}</div>
-                <div className="card-link"><a href={props.link} target='__blank'>Watch Now</a></div>
+                <button className="card-link"><a href={props.link} target='__blank'>Watch Now</a></button>
+                </div>
             </div>
         </div>
         </>
@@ -45,6 +48,7 @@ const Cards=()=>{
                 return(
 
                     <Card
+                    key = {value.id}
                     src={value.img} 
                     title = {value.title} 
                     info = {value.info}

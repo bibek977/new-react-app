@@ -5,8 +5,8 @@ h1 {
 .card-items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
   row-gap: 1rem;
@@ -15,26 +15,48 @@ h1 {
 
 .card .card-main {
   border-radius: 1rem;
-  width: 350px;
-  height: 550px;
+  width: 200px;
+  height: 350px;
   background-color: #003333;
+  padding: 1rem;
 }
 
 .card .card-main .card-img {
-  width: 350px;
-  height: 400px;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
-  border-bottom: 2px solid black;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 1rem;
 }
 
 .card .card-main .card-img .img {
+  border-radius: 1rem;
   width: 100%;
   height: 100%;
 }
 
-.card .card-main .card-title, .card .card-main .card-info, .card .card-main .card-link a {
-  font-size: 3.5rem;
+.card .card-main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card .card-main .text .card-title, .card .card-main .text .card-info, .card .card-main .text .card-link a {
+  font-size: 2rem;
   color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,15 +66,16 @@ h1 {
           justify-content: center;
 }
 
-.card .card-main .card-title:hover, .card .card-main .card-info:hover, .card .card-main .card-link a:hover {
-  color: green;
+.card .card-main .text .card-info, .card .card-main .text .card-link a {
+  font-size: 1rem;
+  padding: .5rem;
 }
 
-.card .card-main .card-info, .card .card-main .card-link a {
-  font-size: 1.5rem;
-}
-
-.card .card-main .card-link a {
+.card .card-main .text .card-link a {
   text-decoration: none;
+}
+
+.card .card-main .text .card-link a:hover {
+  color: green;
 }
 /*# sourceMappingURL=card.css.map */

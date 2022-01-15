@@ -17,14 +17,14 @@ const movies = [
         id : 3,
         title:"Kings man",
         img:"https://i.ytimg.com/vi/R2YTAin-WqU/maxresdefault.jpg",
-        info:"Watch on fMovies",
+        info:"Watch on FMovies",
         link : "https://fmovies.to/movie/the-kings-man-wqwz7/1-full"
     },
     {
         id : 4,
         title:"Shang Chi",
         img:"https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg/220px-Shang-Chi_and_the_Legend_of_the_Ten_Rings_poster.jpeg",
-        info:"Watch on fMovies",
+        info:"Watch on FMovies",
         link : "https://fmovies.to/movie/shang-chi-and-the-legend-of-the-ten-rings-0mrp7/1-full"
     },
     {
@@ -41,6 +41,34 @@ const movies = [
         info : "Watch on Fmovies",
         link : "https://fmovies.to/movie/the-matrix-resurrections-j2w63/1-full"
     },
+    {
+        id : 6,
+        title: "The Matrix",
+        img: "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
+        info : "Watch on Fmovies",
+        link : "https://fmovies.to/movie/the-matrix-resurrections-j2w63/1-full"
+    },
+    {
+        id : 6,
+        title: "The Matrix",
+        img: "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
+        info : "Watch on Fmovies",
+        link : "https://fmovies.to/movie/the-matrix-resurrections-j2w63/1-full"
+    },
+    {
+        id : 6,
+        title: "The Matrix",
+        img: "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
+        info : "Watch on Fmovies",
+        link : "https://fmovies.to/movie/the-matrix-resurrections-j2w63/1-full"
+    },
+    {
+        id : 6,
+        title: "The Matrix",
+        img: "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
+        info : "Watch on Fmovies",
+        link : "https://fmovies.to/movie/the-matrix-resurrections-j2w63/1-full"
+    }
 
 ]
 

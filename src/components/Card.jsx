@@ -1,6 +1,7 @@
 import React from 'react'
 import './sass/card.css'
 import movies from './Movies'
+import series from './Series'
 
 const Card = (props)=>{
     return(
@@ -46,7 +47,7 @@ const Cards=()=>{
             
             {movies.map((value)=>{
                 return(
-
+                    
                     <Card
                     key = {value.id}
                     src={value.img} 
@@ -56,10 +57,31 @@ const Cards=()=>{
 
                 </Card>
                     )
-            })}
+                })}
 
 
         </div>
+                <h1>Series Online - MySite</h1>
+
+                <div className='card-items'>
+
+            
+{series.map((value)=>{
+    return(
+        
+        <Card
+        key = {value.id}
+        src={value.src} 
+        title = {value.title} 
+        info = {value.info}
+        link = {value.link} >
+
+    </Card>
+        )
+    })}
+
+
+</div>
         </>
     )
 }

@@ -3,7 +3,7 @@ import Greetings from './components/greetings/Greetings'
 // import Calculator from './components/greetings/Calculator'
 import Cards from './components/movies/Card'
 import Increment from './components/hooks/Increment'
-import './components/sass/navbar.css'
+import './components/sass/navbar/navbar.css'
 
 export default function Show() {
     const [state, setstate] = useState()

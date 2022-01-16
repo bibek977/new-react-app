@@ -1,5 +1,5 @@
 import React from 'react'
-import '../sass/card.css'
+import '../sass/card/card.css'
 import movies from './Movies'
 import series from './Series'
 

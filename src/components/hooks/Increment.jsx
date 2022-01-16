@@ -18,6 +18,8 @@ export default function Increment() {
             <button onClick={IncNum}>Click Me</button>
             <button onClick={IncNumFive}>Increase 5</button>
             <button onClick={ResetNum}>Reset</button>
+
+
         </div>
     )
 }

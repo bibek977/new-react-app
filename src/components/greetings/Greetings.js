@@ -1,6 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function Greetings() {
+
+
+    let oldTime = new Date().toLocaleTimeString()
+    const [time, settime] = useState(oldTime)
+    const newTime=()=>{
+        let nowTime = new Date().toLocaleTimeString()
+        settime(nowTime)
+    }
+    setInterval(newTime,1000)
+
+    
 
 // const timeNow = new Date(2022, 1, 10, 14)
 const timeNow = new Date()
@@ -33,6 +44,7 @@ else{
     return (
         <div>
              <h1 style={center}>Good, <span style={myStyle}> {greet} </span></h1>
+             <h1>{time}</h1>
         </div>
     )
 }

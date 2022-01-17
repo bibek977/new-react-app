@@ -1,0 +1,29 @@
+.form {
+  width: 90vw;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form h1 {
+  font-size: 4rem;
+}
+
+.form input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border: .4rem solid black;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=form.css.map */

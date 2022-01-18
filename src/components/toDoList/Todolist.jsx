@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ToDolist from './ToDolists'
 import '../sass/todolist/todolist.css'
+import AddIcon from '@mui/icons-material/Add';
 
 export default function Todolist() {
     const [initValue,finalValue]= useState()
@@ -27,7 +28,7 @@ export default function Todolist() {
             <div className="todo-center">
                 <h1>To do List</h1>
                 <input type="text" placeholder='Add Items...' onChange={inputValue} value={initValue}/> 
-                <button onClick={showList}><span>+</span></button>
+                <button onClick={showList}><span><AddIcon/> </span></button>
                 <ul>
                 {items.map((itemval,index)=>{
                         return <ToDolist 

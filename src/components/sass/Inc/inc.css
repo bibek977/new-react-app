@@ -1,0 +1,49 @@
+.inc {
+  height: 90vh;
+  background-color: khaki;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inc .center-inc {
+  width: 30vw;
+  height: 60vh;
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1rem;
+  -webkit-box-shadow: 10px 5px;
+          box-shadow: 10px 5px;
+}
+
+.inc .center-inc h1 {
+  font-size: 5rem;
+}
+
+.inc .center-inc button {
+  margin-top: 1rem;
+  width: 10rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 4rem;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=inc.css.map */

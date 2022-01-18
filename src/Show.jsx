@@ -5,6 +5,7 @@ import Cards from './components/movies/Card'
 import Increment from './components/hooks/Increment'
 import Event from './components/events/Event'
 import Form from './components/form/Form'
+import Todolist from './components/toDoList/Todolist'
 import './components/sass/navbar/navbar.css'
 
 export default function Show() {
@@ -20,6 +21,7 @@ export default function Show() {
             <button onClick={incrementShow}>Increment</button>
             <button onClick={eventShow}>Events</button>
             <button onClick={formShow}>Form</button>
+            <button onClick={listShow}>Todo-List</button>
                 </ul>
             
             </div>
@@ -39,6 +41,9 @@ export default function Show() {
     }
     const formShow=()=>{
         setstate(<Form />)
+    }
+    const listShow=()=>{
+        setstate(<Todolist />)
     }
 
     return (<>

@@ -12,24 +12,30 @@ export default function Form() {
         }
     } )
     const inputEvent=(event)=>{
-        const user = event.target.value
-        const userName = event.target.name
+        // const user = event.target.value
+        // const userName = event.target.name
+        const {value,name} = event.target
+
         setinitText((preValue)=>{
 
-                if(userName==='id'){
-                    return{
+            return {
+                ...preValue,
+                [name] : value
+            }
+                // if(name==='id'){
+                //     return{
 
-                        id : user,
-                        pw : preValue.pw
-                    }
-                } 
-                else if (userName === 'pw'){
-                    return{
+                //         id : value,
+                //         pw : preValue.pw
+                //     }
+                // } 
+                // else if (name === 'pw'){
+                //     return{
 
-                        id : preValue.id,
-                        pw : user
-                    }
-                }
+                //         id : preValue.id,
+                //         pw : value
+                //     }
+                // }
                 
         })
     }

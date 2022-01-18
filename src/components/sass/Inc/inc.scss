@@ -1,0 +1,32 @@
+.inc{
+    height: 90vh;
+    background-color: khaki;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .center-inc{
+        width: 30vw;
+        height: 60vh;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1rem;
+        box-shadow: 10px 5px;
+
+        h1{
+            font-size: 5rem;
+        }
+        button{
+            margin-top: 1rem;
+            width: 10rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            height: 4rem;
+            font-size: 2rem;
+        }
+    }
+
+}

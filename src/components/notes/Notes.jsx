@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import Content from './Content'
 
 export default function Notes(props) {
+    const [expand,setexpand]=useState(false)
     const [data, setdata] = useState({
         title : '',
         content : ''
@@ -35,10 +36,17 @@ export default function Notes(props) {
             return index !== id
         }))
     }
+    const expandIt = ()=>{
+        setexpand(true)
+    }
     return (
         <div className='note-main'>
+            {
+                expand ?
             <h1><input type="text" name='title' value={data.value} onChange={Inputdata} placeholder='Add Title...' /></h1>
-            <p><textarea name="content" id="" cols="30" rows="10" value={data.content} onChange={Inputdata} placeholder='Add Description...' ></textarea></p>
+                : null
+        }
+            <p><textarea name="content" id="" cols="30" rows="10" value={data.content} onClick={expandIt} onChange={Inputdata} placeholder='Add Description...' ></textarea></p>
             <button onClick={showOutput}>Show</button>
 
             <div className="note-container">

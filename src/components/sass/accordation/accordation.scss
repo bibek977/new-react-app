@@ -1,0 +1,33 @@
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container{
+    width: 90vw;
+    // height: 70vh;
+    @include center;
+
+    .accord-main{
+        width:40vw;
+        background-color: blueviolet;
+
+        h1{
+            span{
+                color: white;
+                cursor: pointer;
+                font-size: 3rem;
+                margin: .5rem;
+              
+            }
+        }
+        
+        p{
+            @include center;
+            color: white;
+            background-color: black;
+            font-size: 3rem;
+
+        }
+    }
+}

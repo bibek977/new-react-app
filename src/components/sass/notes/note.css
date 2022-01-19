@@ -1,0 +1,91 @@
+.note-main {
+  background-color: #646262;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.note-main button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.note-main button:hover {
+  background-color: tomato;
+}
+
+.note-main input {
+  width: 15rem;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.note-main textarea {
+  width: 30rem;
+  height: 20rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.note-container {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.note-container .notes {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: khaki;
+  width: 30vw;
+  border-radius: 1rem;
+  border: 3px solid black;
+  padding: 1rem;
+}
+
+.note-container .notes h1 {
+  font-size: 2rem;
+}
+
+.note-container .notes p {
+  font-size: 1.5rem;
+}
+
+.note-container .notes button {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.note-container .notes button:hover {
+  background-color: tomato;
+}
+/*# sourceMappingURL=note.css.map */

@@ -1,20 +1,13 @@
-@mixin center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-container{
-    width: 90vw;
-    // height: 70vh;
-    @include center;
 
-    .accord-main{
-        width:40vw;
-        background-color: blueviolet;
+.accordation-main{
+    width: 90vw;
+
+    .accordation-container{
+        background-color: white;
 
         h1{
             span{
-                color: white;
+                color: green;
                 cursor: pointer;
                 font-size: 3rem;
                 margin: .5rem;
@@ -23,9 +16,9 @@
         }
         
         p{
-            @include center;
-            color: white;
-            background-color: black;
+            text-align: center;
+            color: black;
+            background-color: whitesmoke;
             font-size: 3rem;
 
         }

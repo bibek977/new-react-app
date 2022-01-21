@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import "../sass/Inc/inc.css"
 
 export default function Increment() {
@@ -18,6 +18,11 @@ export default function Increment() {
             setcount(0)
         }
     }
+    useEffect(()=>{
+        return(
+            alert('hello')
+        )
+    })
     return (
         <div className='inc'>
             <div className="center-inc">

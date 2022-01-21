@@ -3,6 +3,7 @@ import "../sass/Inc/inc.css"
 
 export default function Increment() {
     const [count, setcount] = useState(0)
+    const [counts, setcounts] = useState(0)
     const IncNum = ()=>{
         setcount(count + 1)
         // console.log('clicked' , count++)
@@ -20,9 +21,10 @@ export default function Increment() {
     }
     useEffect(()=>{
         return(
-            alert('hello')
+            // alert('hello')
+            document.title=`${counts}`
         )
-    })
+    },[counts])
     return (
         <div className='inc'>
             <div className="center-inc">
@@ -30,7 +32,10 @@ export default function Increment() {
             <h1>{count}</h1>
             <button onClick={IncNum}>Increase</button>
             <button onClick={DecNum}>Decrease</button>
-            <button onClick={ResetNum}>Reset</button>
+            <button onClick={ResetNum}>Reset </button>
+            <button onClick={()=>{
+                return setcounts(counts+5)
+            }}>{counts}</button>
 
             </div>
 

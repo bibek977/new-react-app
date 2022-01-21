@@ -14,7 +14,6 @@
 
 .inc .center-inc {
   width: 30vw;
-  height: 60vh;
   background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,5 +44,9 @@
   cursor: pointer;
   height: 4rem;
   font-size: 2rem;
+}
+
+.inc .center-inc button:last-child {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=inc.css.map */

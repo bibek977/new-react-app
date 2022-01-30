@@ -50,4 +50,9 @@
             cursor: pointer;
         }
     }
+    button:last-child{
+        border-radius: 1px;
+        background-color: aqua;
+        color: black;
+    }
 }

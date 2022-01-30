@@ -63,4 +63,10 @@
   color: green;
   cursor: pointer;
 }
+
+.todolist button:last-child {
+  border-radius: 1px;
+  background-color: aqua;
+  color: black;
+}
 /*# sourceMappingURL=todolist.css.map */
